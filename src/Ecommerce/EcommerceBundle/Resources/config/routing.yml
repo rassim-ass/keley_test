@@ -1,0 +1,23 @@
+ecommerce_produit:
+    resource: "@EcommerceBundle/Resources/config/routing/produit.yml"
+    prefix:   /produit
+
+ecommerce_categorie:
+    resource: "@EcommerceBundle/Resources/config/routing/categorie.yml"
+    prefix:   /categorie
+
+ecommerce_homepage:
+    path:     /
+    defaults: { _controller: EcommerceBundle:Default:index }
+
+ecommerce_testproduit:
+    path:     /testproduit
+    defaults: { _controller: EcommerceBundle:Default:produit }
+
+ecommerce_ajout:
+    path:     /produit/ajout
+    defaults: { _controller: EcommerceBundle:Produit:ajout }
+
+ecommerce_result:
+    path:     /produit/result
+    defaults: { _controller: EcommerceBundle:Produit:result }
